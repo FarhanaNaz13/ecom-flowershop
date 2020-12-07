@@ -1,0 +1,192 @@
+#section-header .header-top .border-bottom-1 {
+    border-bottom: 1px solid #ededed;
+}
+  
+      #section-header .header-top {
+    background: #ffffff;
+  }
+
+  #section-header .header-top {
+    padding-top:0px;
+  }
+
+  #section-header .header-top {
+    padding-bottom:0px;
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px){
+
+   #section-header  .header-top {
+      padding-top:0px;
+    }
+
+    #section-header .header-top {
+      padding-bottom:0px;
+    }
+
+  }
+  @media (max-width: 767px) {
+
+    #section-header .header-top {
+      padding-top:0px;
+    }
+
+    #section-header .header-top {
+      padding-bottom:0px;
+    }
+  }
+
+  
+  
+  
+
+#section-header .welcome-area > p {
+    color: #454545;
+}
+  
+    
+  #section-header .same-style button i {
+    color: #545454;
+}
+
+#section-header .account-curr-lang-wrap ul li a {
+    color: #454545;
+}
+  
+    
+  #section-header .account-curr-lang-wrap ul li:hover > a {
+    color: #ff3d2a;
+}
+  
+
+  #section-header .account-curr-lang-wrap ul li ul li a {
+         color: #454545;
+}
+  #section-header .account-curr-lang-wrap ul li ul li:hover > a {
+    color: #ff3d2a;
+}
+
+
+.theme-logo img{
+    max-width: 300px;
+  }
+
+  
+       #section-header .header-bottom {
+    background: #ffffff;
+  }
+
+    #section-header .header-bottom.sticky-header.sticky {
+    background: #fff;
+  }
+
+  #section-header .header-bottom {
+    padding-top:0px;
+  }
+
+  #section-header .header-bottom{
+    padding-bottom:0px;
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px){
+
+    #section-header .header-bottom {
+      padding-top:20px;
+    }
+
+    #section-header .header-bottom {
+      padding-bottom:20px;
+    }
+
+  }
+  @media (max-width: 767px) {
+
+    #section-header .header-bottom {
+      padding-top:20px;
+    }
+
+    #section-header .header-bottom {
+      padding-bottom:20px;
+    }
+  }
+
+  
+  
+  
+  #section-header .main-menu ul li a {
+    color:  #454545;
+}
+  
+  #section-header .main-menu ul li:hover > a {
+    color:  #ff3d2a;
+}
+  
+  #section-header .main-menu ul li ul li a {
+    color:  #454545;
+}
+  
+  
+  #section-header .main-menu ul li ul li a:hover {
+    color: #ff3d2a;
+}
+  
+  #section-header .main-menu ul li ul li a {
+    color: #454545;
+}
+  
+  #section-header .main-menu ul li ul li a:hover  {
+    color: #ff3d2a;
+}
+  
+  #section-header .header-cart > a .cart-icon i {
+    color: #454545;
+}
+  #section-header .header-cart > a .cart-icon span {
+    color: #fff;
+    background-color: #ff3d2a;
+}
+  
+  #section-header .cart-text > span {
+    color: #454545;
+}
+  
+  #section-header .mean-container .mean-nav ul li a {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color:  #242424;
+}
+  
+  #section-header .mean-container .mean-nav ul li a:hover {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #000;
+}
+  #section-header .mean-container .mean-nav ul li li a {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #242424;
+}
+  
+    
+  #section-header .mean-container .mean-nav ul li li a:hover {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #000;
+}
+  
+  #section-header .mean-container .mean-nav ul li li li a {
+    background:  #f8f8f8 none repeat scroll 0 0;
+    color: #242424;
+}
+  
+    #section-header .mean-container .mean-nav ul li li li a:hover {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #000;
+}
+  
+  
+  #section-header  .mean-container a.meanmenu-reveal span {
+    background: #333;
+}
+  
+  #section-header  .mean-container a.meanmenu-reveal {
+    border: 1px solid #333;
+}

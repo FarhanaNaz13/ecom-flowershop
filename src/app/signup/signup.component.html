@@ -1,0 +1,139 @@
+<app-header></app-header>
+<!-- BREADCRUMBS SETCTION START -->
+
+<div class="breadcrumbs-section" style="background-color: rgb(190, 140, 150);">
+    <div class="breadcrumbs" style="background-color: rgb(253, 237, 244);">
+      <div class="container" style="background-color: rgb(253, 237, 244);">
+        <div class="row">
+          <div class="col-12">
+            <div class="breadcrumbs-inner ptb-20">
+              
+              
+  <nav class="" role="navigation" aria-label="breadcrumbs">
+    <ul class="breadcrumb-list">
+  
+      <li>
+        <a href="/" title="Back to the home page">Home</a>
+      </li>
+      <li>
+        
+  
+  
+        <span>Create Account</span>
+  
+        
+      </li>
+    </ul>
+  </nav>
+  
+  
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- BREADCRUMBS SETCTION END -->
+<div class="register-area pt-80 pb-80 login-form-section" style="background-color: rgba(230, 214, 221, 0.226);">
+    <div class="container col-10 mb-4 ">
+
+      <div class="row ">
+        <div class=" float-left mt-4  col sm-8" >
+          <figure><img src="assets/images/pr-1.jpg" alt="sing up image"></figure>
+          <div class="login-text login-title mb-40 col sm-4">
+            <h2 style="background-color: rgba(231, 207, 217, 0.712); color: rgb(164, 175, 184)">Find Your Own Happines</h2>
+            <p></p>
+
+
+          </div>
+
+
+          </div>
+        <div class="offset-lg-2 col-lg-6 col-md-8 col-8">
+
+            
+
+              <div class="signup-form  col sm-6 shadow mb-4" style="background-color: rgb(255, 255, 255);">
+                <div class="login-text login-title mb-40 col sm-4">
+                  <h2 style="background-color: rgba(231, 207, 217, 0.712); color:rgb(109, 121, 129)">Sign up</h2>
+                  <p></p>
+
+  
+                </div>
+
+
+                 
+                 <div class="col-sm-12 mb-4">
+
+                    <div class="col-sm-12 mb-4">
+                  <form #signup ="ngForm" (ngSubmit)="submit()" class="text-center border border-light p-5">
+                    
+
+                   
+                    <div class="form-row mb-4">
+
+                      <input type="text" id="name" class="form-control"    placeholder=" name" [(ngModel)]="user.name" name="name" #name="ngModel" required >
+                    <div [hidden]="name.valid || name.pristine">
+                      <p>empty name field is not allowed</p>
+                    
+                    
+                    </div>
+                  </div>
+          
+                  <div class="form-row mb-4">
+                    <input type="text"  class="form-control " id="username" class="form-control" placeholder="user name" [(ngModel)]="user.username"  name="Uname">
+                  </div>
+                
+                  <input type="password" id="password" class="form-control mb-4" placeholder="Password" [(ngModel)]="user.password"  name="pass" #password ="ngModel" required
+                    aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+                  <div [hidden]="password.valid || password.pristine">
+                    <p> empty password field is  not allowed</p>
+                  </div>
+          
+                  <input type="date" id="dob" class="form-control mb-4" placeholder="dob" [(ngModel)]="user.dob"  name="dob" #dob="ngModel" required>
+                  <div [hidden]="dob.valid || dob.pristine">
+                    <p>empty dob field is not allowed</p>
+                  </div>
+                  <input type="email" name="email" id="email" class="form-control mb-4" placeholder="E-mail" [(ngModel)]="user.email">
+          
+                  
+          
+                  <input type="text" id="mobile" class="form-control mb-4" placeholder="Mobile number" [(ngModel)]="user.mobile"  name="mbl"
+                    aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                  
+                  <input type="text" id="address" class="form-control mb-4" placeholder="address" [(ngModel)]="user.address"  name="addrs">
+                  <!-- Newsletter -->
+          
+          
+                  <!-- Sign up button -->
+                  <button type="submit" block="true" class="btn btn-dark " style="background-color: rgb(211, 167, 176);" >Sign up</button>
+                  <a routerLink="/log-in" class="ml-2 btn btn-dark " style="background-color: rgb(160, 104, 115);" routerLinkActive="active">Sign in </a>
+          
+                  <hr>
+
+                  <figure><img src="assets/images/logo.png" alt="sing up image"></figure>
+                         <!-- Terms of service -->
+                         <p>By clicking
+                          <em>Sign up</em> you agree to our
+                          <a href="" target="_blank">terms of service</a></p>
+                </form>
+              </div>
+          
+                </div>
+          
+
+          
+
+              
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<app-footer></app-footer>

@@ -1,0 +1,40 @@
+
+
+
+    
+      <form class="form-inline d-flex justify-content-center md-form form-sm active-pink-2 mb-4 mt-4 float-right">
+        <input class="form-control form-control-sm mr-3 " type="text" placeholder="fdsfdsfsd" [(ngModel)]="keyword"    (input)="searchKeyword()" name="keyword"
+          aria-label="Search">
+        <i class="fa fa-search"   (click)="searchKeyword()" ></i>
+      </form>
+      <div class="responsive">
+        <table class="table" style="margin: 60px">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Availability</th>
+              <th>Image</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let p of productList">
+              <td>{{ p.id }}</td>
+              <td>{{ p.name }}</td>
+              <td>{{ p.price }}</td>
+              <td>{{ p.qty }}</td>
+              <td>{{p.availability}}</td>
+
+              <td>    <a>
+                <img class="img-fluid" src="assets/images/{{p.photo}}" />
+              </a></td>
+
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+   

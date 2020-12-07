@@ -1,0 +1,250 @@
+<!-- <script src="//cdn.shopify.com/s/files/1/0021/5570/8489/t/2/assets/owl.carousel.min.js?v=7581371558069594612" type="text/javascript"></script> -->
+
+
+
+<app-header></app-header>
+
+<!-- start coding and styling the carousel -->
+<section id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li *ngFor="let slider of sliders; let i=index" data-target="#myCarousel" [attr.data-slide-to]="i"
+      [ngClass]="{active: i ==0}"></li>
+  </ol><!-- carousel indicators -->
+
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item " *ngFor="let slide of sliders ;let i = index" [ngClass]="{active: i ==0}">
+      <img class="d-block img-fluid " width="100%" [src]="slide.image" [attr.alt]="slide.title">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{slide.title}}</h3>
+        <p>{{slide.desc}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<div class="banner-area" id="section-1533619398218">
+  <div class="container">
+    <div class="banner-wrap">
+      <div class="row">
+
+
+        <div class="col-lg-4 col-md-6 col-12" id="block-1533619415540">
+          <div class="single-banner img-zoom mb-30">
+            <a href="#">
+              <img src="//cdn.shopify.com/s/files/1/0021/5570/8489/files/banner-1.png?v=1533619449" alt="">
+            </a>
+            <div class="banner-content">
+
+              <h4>Camellias</h4>
+
+
+              <a href="#">shop Now</a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 col-12" id="block-1533619443234">
+          <div class="single-banner img-zoom mb-30">
+            <a href="#">
+              <img src="//cdn.shopify.com/s/files/1/0021/5570/8489/files/banner-2.png?v=1533619462" alt="">
+            </a>
+            <div class="banner-content">
+
+              <h4>Bergamot</h4>
+
+
+              <a href="#">shop Now</a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 col-12" id="block-1533619471164">
+          <div class="single-banner img-zoom mb-30">
+            <a href="#">
+              <img src="//cdn.shopify.com/s/files/1/0021/5570/8489/files/banner-3.png?v=1533619491" alt="">
+            </a>
+            <div class="banner-content">
+
+              <h4>Bottlebrush</h4>
+
+
+              <a href="#">shop Now</a>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="product-top-bar  section-border  mb-35">
+
+
+
+
+    <div class="section-title-wrap">
+      <h3 class="section-title section-bg-white">Featured Products</h3>
+    </div>
+
+
+
+
+    <div class="product-tab-list nav section-bg-white">
+
+      <a class="active" data-toggle="tab" href="#product-area-1533620356040-winter">
+        <h4>Winter</h4>
+      </a>
+
+      <a class="" data-toggle="tab" href="#product-area-1533620356040-various">
+        <h4>Various</h4>
+      </a>
+
+
+      <a class="" data-toggle="tab" href="#product-area-1533620356040-greens">
+        <h4>Greens</h4>
+      </a>
+
+    </div>
+
+
+  </div>
+  <app-producthome></app-producthome>
+
+  <div class="single-best-selling" id="block-1533817217832">
+    <div class="row flex-row-reverse">
+
+      <div class="col-lg-6 col-md-6">
+        <div class="deals-content text-left deal-mrg">
+
+          <img alt="hilight" src="//cdn.shopify.com/s/files/1/0021/5570/8489/files/deals-2.png?v=1533630625">
+
+
+          <h2>Hot Deal ! Sale Up To <span>20% Off</span></h2>
+
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+
+          <div class="timer timer-style">
+            <div data-countdown="2019/09/01"></div>
+          </div>
+
+
+          <div class="deals-btn">
+            <a href="/collections/all">Shop Now</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div class="single-best-img">
+          <img class="tilter" src="assets/images/girlflower.jpg" alt="banner">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="grid-list-product-wrapper">
+      <div class="product-grid product-view pb-20">
+        <div class="row">
+          <div *ngFor="let item of productList2" class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+
+            <div class="product-wrapper">
+
+              <div class="product-img">
+                <a href="/products/fat-fermentum-metusid">
+                  <img class="img-fluid" src="../../../assets/images/{{item.photo}}" />
+                </a>
+
+                <div class="product-action">
+                  <a class="action-wishlist" href="/account/login" title="Wishlist">
+                    <i class="icon-heart"></i>
+                  </a>
+
+                  <a href="javascript:void(0);" class="action-btn disabled-add-to-cart action-cart" (click)="addToCart(item)"  title="Add to Cart">
+                    <i class="icon-handbag"></i>
+                  </a>
+
+
+                  <a href="javascript:void(0);" class="action-compare quick-view"
+                    onclick="quiqview('fat-fermentum-metusid')" data-toggle="modal" data-target="#quickViewModal">
+                    <i class="icon-magnifier-add"></i>
+                  </a>
+
+
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h4>
+                  <a href="/products">{{ item.name }}</a>
+                </h4>
+                <div class="product-price-wrapper">
+
+                  <span><span class=money>{{ item.price }} tk</span></span>
+
+                </div>
+                <span class="badge badge-primary mr-4 text-uppercase">{{ item.availability }} Stock</span>
+                <h3 (click)="addToCart(item)" class="badge badge-dark " >Add to Cart</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+<div class="col-lg-8 col-md-8">
+
+</div>
+
+
+<div class="new-year-offer-area" id="section-1533631842656">
+  <div class="container">
+    <div class="new-year-offer-wrap bg-img" style="background-image:url(assets/images/bg.jpg);">
+      <div class="new-year-offer-content text-center ">
+
+        <h4 style="color: rgb(88, 19, 48); ">New Year Offer</h4>
+
+
+        <h3 style="color: rgb(88, 19, 48);">Fresh flowers for any special occasion</h3>
+
+
+        <a href="#" style="color: rgb(88, 19, 48);">Discover now</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

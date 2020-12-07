@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-dark sticky-top  flex-md-nowrap p-0 shadow " style=" background-color: rgb(44, 76, 104);">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Flower Shop</a>
+    <button
+      class="navbar-toggler position-absolute d-md-none collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#sidebarMenu"
+      aria-controls="sidebarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" (click)= "logout()">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-md-2 col-sm-2 sidebar1">
+        <div class="logo">
+            <img src="assets/images/floral-logo.webp" class="img-responsive center-block" alt="Logo">
+        </div>
+        <br>
+        <div class="left-navigation">
+            <ul class="list">
+                <!-- <h5><strong>WHEREABOUTS</strong></h5> -->
+                <li><a routerLink="home" >Home</a></li>
+                <li><a routerLink="/"> Customer List</a></li>
+                <li><a routerLink="/user">User Profile</a></li>
+                <li><a routerLink="/productdata">Products data View</a></li>
+                <li><a routerLink="/products">Products page</a></li>
+
+                <li><a routerLink="/order">Order</a></li>
+                <li>cart</li>
+
+            </ul>
+
+            <br>
+          
+            <ul class="list">
+                <h5><strong>Products Stock</strong></h5>
+                <li><a routerLink="/productadd">Add Products</a></li>
+                <li><a routerLink="/productupdate">Update products</a></li>
+                <li>Remove Products</li>
+
+            </ul>
+          
+        </div>
+      </div>
+  
+      <div class="col-md-8 col-sm-8 main-content">
+        <router-outlet></router-outlet>  
+
+        </div>
+    </div>
+</div>

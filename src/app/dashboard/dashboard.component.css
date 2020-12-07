@@ -1,0 +1,31 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .sidebar1 {
+    background: #F17153;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e0a5b2, #f175a45d, #f153c2);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e0a5b2, #f175a45d, #f153c2);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e0a5b2, #f175a45d, #f153c2);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e0a5b2, #f175a45d, #5a4654);
+    /* Standard syntax */
+    padding: 0px;
+    min-height: 100%;
+}
+.main-content{
+    text-align:center;
+    }

@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+    <!--start: create product -->
+    
+      <div class="col-sm-10 ">
+    
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-pink-2 mb-4 mt-4 float-right">
+            <input class="form-control form-control-sm mr-3 " type="text" placeholder="Search" [(ngModel)]="keyword"    (input)="searchKeyword()" name="keyword"
+              aria-label="Search">
+            <i class="fa fa-search"   (click)="searchKeyword()" ></i>
+          </form>
+ <div class="responsive">
+    <table class="table" style="margin: 100px">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th> Product Name</th>
+          <th> Product Price</th>
+          <th> Product Quantity</th>
+          <th> Product photo</th>
+          <th> Product OrderStatus</th>
+          <th> Customer Id</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of orderList">
+          <td>{{ p.id }}</td>
+          <td>{{ p.pname }}</td>
+          <td>{{ p.price }}</td>
+          <td>{{ p.qty }}</td>
+          <td>{{p.photo}}</td>
+          <td>{{p.orderStatus}}</td>
+         
+            <td>  <a> <img class="img-fluid" src="assets/images/{{p.photo}}" />
+            </a></td>
+
+         
+
+          <td>
+            <a class="btn btn-danger btn-sm  active float-right"  (click)="delete(p.id)" role="button" aria-pressed="true">Remove </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>

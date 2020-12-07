@@ -1,0 +1,354 @@
+
+<app-header></app-header>
+
+
+<div class="breadcrumbs-section mb-4">
+  <div class="breadcrumbs" style="background-color: rgba(241, 227, 230, 0.712);" >
+    <div class="container" style="background-color: rgba(219, 248, 237, 0.808);" >
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcrumbs-inner ptb-20 mb-4">
+            
+            
+  <nav class="" role="navigation" aria-label="breadcrumbs">
+  <ul class="breadcrumb-list">
+  
+    <li>
+      <a href="/" title="Back to the home page">Home</a>
+    </li>
+    <li>
+  
+      <span>Products</span>
+    </li>
+  </ul>
+  </nav>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+<!-- BREADCRUMBS SETCTION END -->
+  
+  
+  <div id="shopify-section-collection-template" class="shopify-section">
+  <div class="shop-page-area" id="section-collection-template">
+  <div class="container">
+    <div class="row flex-row-reverse">
+      <div class="col-lg-9">
+        
+  <div class="banner-area pb-30"><a href="#">
+    <img alt="banner" src="//cdn.shopify.com/s/files/1/0021/5570/8489/files/banner-49.jpg?v=1533640862">
+  </a></div>
+  <div class="shop-topbar-wrapper">
+  <div class="shop-topbar-left">
+    <ul class="view-mode">
+      <li class="active"><a href="#product-grid" data-view="product-grid"><i class="fa fa-th"></i></a></li>
+      <li><a href="#product-list" data-view="product-list"><i class="fa fa-list-ul"></i></a></li>
+    </ul>
+    <p>Showing 1 - 12 of 43 item(s) </p>
+  </div>
+  
+  <div class="product-sorting-wrapper">
+  
+  
+  
+    <div class="toolbar-shorter product-show shorting-style">
+      <label for="SortBy">Sort by</label>
+      <select class="wide" name="SortBy" id="SortBy">
+        <option value="manual">Featured</option>
+        <option value="best-selling">Best Selling</option>
+        <option value="title-ascending">Alphabetically, A-Z</option>
+        <option value="title-descending">Alphabetically, Z-A</option>
+        <option value="price-ascending">Price, low to high</option>
+        
+      </select>
+    </div>
+  
+  
+  </div>
+  </div>
+  <!-- Search form -->
+
+
+        <div class="grid-list-product-wrapper">
+   <div class="product-grid product-view pb-20">
+            <form class="form-inline d-flex justify-content-center md-form form-sm active-pink-2 mb-4 mt-2">
+              <input placeholder="dfkdslfdsl" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" (input)="searchKeyword()"  [(ngModel)]="keyword"  name="keyword" aria-label="Search">
+              <i class="fa fa-search" (click)="searchKeyword()"></i>
+            </form>
+            <div  class="row">
+              <div  *ngFor="let item of productList" class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+  
+  <div class="product-wrapper">
+    
+  <div class="product-img">
+    <a href="/products/fat-fermentum-metusid">
+      <img class="img-fluid" src="../../../assets/images/{{item.photo}}" />
+    </a>
+  
+    <div class="product-action">
+  <a class="action-wishlist" href="/account/login" title="Wishlist">
+        <i class="icon-heart"></i>
+      </a>
+      
+      <a href="javascript:void(0);" class="action-btn disabled-add-to-cart action-cart" (click)="addToCart(item)"   title="Add to Cart">
+        <i class="icon-handbag"></i>
+      </a>
+  
+  
+      <a href="javascript:void(0);"  data-toggle="modal" data-target="#quickViewModal">
+        <i class="icon-magnifier-add"></i>
+      </a>
+  
+  
+    </div>
+  </div>
+  <div class="product-content text-center">
+    <h4>
+      <a href="/products">{{ item.name }}</a>
+    </h4>
+    <div class="product-price-wrapper">
+      
+      <span><span class=money>{{ item.price }} tk</span></span>
+
+    </div>
+    <span class="badge badge-primary mr-4 text-uppercase">{{ item.availability }} Stock</span>
+    <h3  (click)="addToCart(item)"  class="badge badge-dark">Add to Cart</h3>
+  </div>
+  </div>
+              </div>
+            </div>
+  
+            </div>
+          </div>
+  
+          
+          <div class="pagination-total-pages">
+            
+  <div class="shop-pagination text-center">
+  <nav class="pagination pagination-style">
+    <ul class="">
+      <li>
+        
+      <li class="disabled prev">
+        <a href="">
+          <span><i class="ion-ios-arrow-left"></i></span>
+        </a>
+      </li>
+      <li class="active"><a href="">1</a></li>
+      
+      <li>
+        <a href="/collections/all?page=2" title="">2</a>
+      </li>
+      <li>
+        <a href="/collections/all?page=3" title="">3</a>
+      </li>
+      
+      
+      
+      <li class="next"><a href="/collections/all?page=2" title="Next &raquo;"><span aria-hidden="true"><i class="ion-ios-arrow-right"></i></span></a></li>
+      
+    </ul>
+  </nav>
+  </div>
+  
+            <div class="total-pages">
+              <p>Showing 1 - 12 of 43 item(s) </p>
+            </div>
+            
+          </div>
+          
+            
+  
+        
+      </div>
+       
+      <div class="col-lg-3">
+        <div class="shop-sidebar-wrapper gray-bg-7 shop-sidebar-mrg">
+  
+  
+  
+  
+  <div class="shop-widget">
+    <h4 class="shop-sidebar-title">Category</h4>
+    <div class="shop-catigory">
+      
+      
+      <ul id="faq">
+         
+        
+        <li class=""> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-best-selling">Best Selling <i class="ion-ios-arrow-down"></i></a>
+          <ul id="shop-catigory-best-selling" class="panel-collapse collapse">
+            
+            
+            <li><a href="/products/demo-product-title-1">Polka Dot Plant</a></li>
+            
+            <li><a href="/products/cras-neque-metus">Pearly Everlasting</a></li>
+            
+            
+            
+          </ul>
+        </li>
+         
+        <li class=""> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-greens">Greens <i class="ion-ios-arrow-down"></i></a>
+          <ul id="shop-catigory-greens" class="panel-collapse collapse ">
+            
+            
+            <li><a href="/products/neque-porro-quisquam">Evergreen Candytuft</a></li>
+            
+            <li><a href="/products/illo-inventore-veritatis">Polka Dot Plant</a></li>
+            
+            <li><a href="/products/hair-brush-box">Yellow Loosestrife</a></li>
+            
+            
+          </ul>
+        </li>
+         
+        <li class=""> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-hot-flower">Hot Flower <i class="ion-ios-arrow-down"></i></a>
+          <ul id="shop-catigory-hot-flower" class="panel-collapse collapse ">
+            
+            
+            <li><a href="/products/demo-product-title-1">Polka Dot Plant</a></li>
+            
+            <li><a href="/products/cras-neque-metus">Pearly Everlasting</a></li>
+            
+            <li><a href="/products/neque-porro-quisquam">Evergreen Candytuft</a></li>
+          
+          </ul>
+        </li>
+         
+        <li class=""> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-various">Various <i class="ion-ios-arrow-down"></i></a>
+          <ul id="shop-catigory-various" class="panel-collapse collapse ">
+            
+            
+            <li><a href="/products/illo-inventore-veritatis">Polka Dot Plant</a></li>
+            
+            <li><a href="/products/dummy-product-title">Dutchman's Breeches</a></li>
+            
+            <li><a href="/products/ipsam-voluptatem">Glory of the Snow</a></li>
+            
+            <li><a href="/products/hair-brush-box">Yellow Loosestrife</a></li>
+            
+            
+          </ul>
+        </li>
+         
+        <li class=""> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-winter">Winter <i class="ion-ios-arrow-down"></i></a>
+          <ul id="shop-catigory-winter" class="panel-collapse collapse ">
+            
+            
+            <li><a href="/products/dolore-magnam-aliquam">Flowers Bouquet Pink</a></li>
+            
+            <li><a href="/products/donec-ac-tempus-nrb">Evergreen Candytuft</a></li>
+          
+          </ul>
+        </li>
+         
+      </ul>
+      
+      
+    </div>
+  </div>
+  
+  
+  <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+    <h4 class="shop-sidebar-title">Custom Menu</h4>
+    <div class="shop-catigory mt-20 category-sub-menu">
+      <ul>
+      
+      
+      <li class="has-sub "><a href="/">Home</a>
+  
+      </li>
+      <li class="has-sub active"><a href="/collections/all">shop</a>
+        <ul>
+          
+          <li><a href="#">Categories 01</a></li>
+          
+          <li><a href="#">Categories 02</a></li>
+          
+        </ul>
+      </li>
+      
+      <li class="has-sub "><a href="/products/accusantium-doloremque">Products </a>
+        <ul>
+          
+          <li><a href="/products/cras-neque-metus">Simple Product</a></li>
+          
+          <li><a href="/products/aliquam-consequat-mattis">Variable Product</a></li>
+  
+          
+        </ul>
+      </li>
+  
+      
+      <li class="has-sub "><a href="/blogs/news">blog</a>
+     
+      </li>
+      <li class=""><a href="/pages/about">about</a></li>
+  
+      <li class=""><a href="/pages/contact">contact</a></li>
+    
+      </ul>
+    </div>
+  </div>
+  
+  <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+    <h4 class="shop-sidebar-title">By Brand</h4>
+    <div class="sidebar-list-style mt-20">
+      <ul>
+        <li class=""><a href="/collections/vendors?q=brothers">brothers</a></li>
+        
+        <li class=""><a href="/collections/vendors?q=hatil">hatil</a></li>
+        
+        
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+    <h4 class="shop-sidebar-title">By Color</h4>
+    <div class="sidebar-list-style mt-20">
+      <ul>
+        
+        <li class=""><a href="/category/red">red</a></li>
+        
+        <li class=""><a href="/category/white">green</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+    <h4 class="shop-sidebar-title">By Type</h4>
+    <div class="sidebar-list-style mt-20">
+      <ul>
+        
+        <li class=""><a href="/collections/types?q=assorted">assorted</a></li>
+  
+        
+        <li class=""><a href="/collections/types?q=pant">pant</a></li>
+        
+         
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+<app-footer></app-footer>

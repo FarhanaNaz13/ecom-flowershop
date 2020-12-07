@@ -1,0 +1,104 @@
+<app-header></app-header>
+
+<div class="breadcrumbs-section mt-2 mb-4">
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcrumbs-inner ptb-20">
+
+
+            <nav class="" role="navigation" aria-label="breadcrumbs">
+              <ul class="breadcrumb-list">
+
+                <li>
+                  <a href="/" title="Back to the home page">Home</a>
+                </li>
+                <li>
+
+                  <span>Please fill up the form</span>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BREADCRUMBS SETCTION END -->
+<section id="checkout">
+  <div class="container-fluid ">
+    <div class="row">
+      <!-- <div *ngIf="orderSent" class="m-2 text-center">
+                <h2>Thanks!</h2>
+                <p>Thanks for placing your order.</p>
+                <p>We'll ship your goods as soon as possible.</p>
+                <button class="btn btn-primary" routerLink="/store">Return to Store</button>
+              </div> -->
+      <div class="col md-3 mx-4 my-4 mt-4">
+
+        <img src="assets/images/img-2.png" alt="icon " height="500px">
+      </div>
+
+
+
+      <div class="col md-9 mt-4 mr-4 ">
+
+        <form #checkoutForm="ngForm" (ngSubmit)=" addToCheckout(order)" class="m-2">
+          <div class="form-group">
+            <label>Product Name</label>
+            <input class="form-control" [(ngModel)]="order.pname" name="pname" />
+
+          </div>
+          <div class="form-group">
+            <label>price</label>
+            <input class="form-control" [(ngModel)]="order.price" name="price" />
+
+          </div>
+          <div class="form-group">
+            <label>Quantity</label>
+            <input class="form-control" [(ngModel)]="order.qty" name="qty" />
+
+          </div>
+
+
+
+
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" [(ngModel)]="checkout.customername" name="name" value='sajjad' required />
+            <span>
+              Please enter your name
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input class="form-control" [(ngModel)]="checkout.customeraddress" name="address" value='badda' required />
+            <span>
+              Please enter your address
+            </span>
+          </div>
+          <div class="form-group">
+            <label>Mobile</label>
+            <input class="form-control" [ngModel]="checkout.customermobile" name="mobile" value='664748' required />
+
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-secondary m-1" [routerLink]="['/cart']">Back</button>
+            <button class="btn btn-primary m-1" type="submit">Complete Order</button>
+
+
+          </div>
+
+        </form>
+        <button class="btn btn-primary m-1" type="submit" (click)="edit(order.id)">product details</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<app-footer></app-footer>
